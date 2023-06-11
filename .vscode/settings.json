@@ -1,0 +1,35 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "typescript.tsdk": "node_modules/typescript/lib",
+
+    "search.exclude": {
+        "/.nuxt": true,
+        "/.eslintcache": true,
+        "/package.json": true,
+        "/package-lock.json": true,
+    },
+
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[scss]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    
+    "[vue]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    }
+}
