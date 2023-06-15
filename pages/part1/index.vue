@@ -6,7 +6,7 @@
     >
       <span>{{ product }}</span>
     </div>
-    <div class="cart fa fa-shopping-cart">Bag ({{ cart }})</div>
+    <div class="cart">Bag ({{ cart }})</div>
     <div class="product-display">
       <div class="product-container">
         <div class="product-image">
@@ -40,7 +40,7 @@
             class="color-circle"
             :style="{ backgroundColor: variant.color }"
           >
-            {{ variant.quantity }}
+            <span style="margin-left: 2px">{{ variant.quantity }}</span>
           </div>
           <div class="form-group" style="padding-top: 10px">
             <button

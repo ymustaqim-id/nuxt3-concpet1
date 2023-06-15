@@ -69,6 +69,11 @@ const review = ref('')
 const rating = ref(0)
 
 const dikirim = () => {
+  if (nama.value == '' || review.value == '' || rating.value == 0) {
+    alert('Mohon isikan semua field dengan lengkap. Terimakasih.')
+    return
+  }
+
   isi.value = review.value
   isiNama.value = nama.value
   isiRating.value = rating.value
