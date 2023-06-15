@@ -1,5 +1,5 @@
 <template>
-  <div class="form-group" style="padding-left: 10px">
+  <div class="form-group">
     <div class="col-md-4">
       <div class="card">
         <div class="card-body">

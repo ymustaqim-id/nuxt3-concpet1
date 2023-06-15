@@ -15,6 +15,10 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css'
         }
       ]
     }

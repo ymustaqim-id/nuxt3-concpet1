@@ -6,7 +6,7 @@
     >
       <span>{{ product }}</span>
     </div>
-    <div class="cart">Bag ({{ cart }})</div>
+    <div class="cart fa fa-shopping-cart">Bag ({{ cart }})</div>
     <div class="product-display">
       <div class="product-container">
         <div class="product-image">
@@ -39,19 +39,21 @@
             "
             class="color-circle"
             :style="{ backgroundColor: variant.color }"
-          ></div>
-          <div>
+          >
+            {{ variant.quantity }}
+          </div>
+          <div class="form-group" style="padding-top: 10px">
             <button
-              class="button"
+              class="btn btn-success"
               :class="{ disabledButton: !updateStok }"
               :disabled="!updateStok"
               v-on:click="addToCart"
             >
               Add to Bag
             </button>
-
+            &nbsp; &nbsp; &nbsp;
             <button
-              class="button"
+              class="btn btn-warning"
               :class="{ disabledButton: !updateStok }"
               :disabled="!updateStok"
               v-on:click="reduceToCart"
