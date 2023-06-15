@@ -9,13 +9,14 @@ export default defineNuxtConfig({
     // '@/assets/nike-dua.css',
     // '@/assets/nike-tiga.css'
   ],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        sass: {
-          // additionalData: '@import "@/assets/styles/_variables.sass"'
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'
         }
-      }
+      ]
     }
   }
 })

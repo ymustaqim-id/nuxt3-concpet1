@@ -27,7 +27,7 @@
             </ul>
           </fieldset>
 
-          <p v-if="updateStok">Product In Stock</p>
+          <p v-if="updateStok">Product Still Available</p>
           <p v-else>Product Out of Stock</p>
           <div
             v-for="(variant, index) in variants"
@@ -62,10 +62,14 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <Form />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import Form from '~/component/Form.vue'
 const cart = ref(0)
 const product = ref('Nike Dunk Low')
 const imageDefault = ref(
